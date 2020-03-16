@@ -1,15 +1,15 @@
 import React from 'react';
 import '../App.css';
-import Otsikko from './Otsikko';
-import SliderApp from './Slider';
+import AppBaari from './AppBaari';
+
 
 function MyApp() {
 
   return ( 
     <div className="App">
         <div className="container">
-            <Otsikko />
-            <SliderApp />
+            <AppBaari />
+
         </div>
 
     </div>
