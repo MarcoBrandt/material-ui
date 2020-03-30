@@ -17,6 +17,7 @@ import MyGridApp from './MyGridApp';
 import Henkilolomake from './Henkilolomake';
 import Menut from './Menut';
 import Menut2 from './Menut2';
+import Tyyli from './Tyyli';
 
 function AppBaari(props) {
   const { children, value, index, ...other } = props;
@@ -72,6 +73,7 @@ export default function SimpleTabs() {
           <Tab icon={<FastfoodIcon/>} label="Ruokahaku (Tehtävä 4)" {...a11yProps(2)} />
           <Tab icon={<CreateIcon/>} label="Lomake (Tehtävä 5)" {...a11yProps(3)} />
           <Tab icon={<MenuIcon/>} label="Menu (Tehtävä 6)" {...a11yProps(4)} />
+          <Tab icon={<MenuIcon/>} label="Tyyli (Tehtävä 7)" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
       <AppBaari value={value} index={0}>
@@ -89,6 +91,9 @@ export default function SimpleTabs() {
       <AppBaari value={value} index={4}>
         <Menut2 />
         <Menut /> 
+      </AppBaari>
+      <AppBaari value={value} index={5}>
+        <Tyyli />
       </AppBaari>
     </div>
   );
